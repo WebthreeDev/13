@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Dutch Decentralized Applications">
+    <meta name="description" content="#GrowAI #GrowAI provides a decentralized financial asset that rewards users through its auto-compounding and autostaking protocol.">
+    <meta property="og:description" content="#GrowAI #GrowAI provides a decentralized financial asset that rewards users through its auto-compounding and autostaking protocol." />
+    <meta property="og:title" content="GrowAI V2" />
+    <title>GrowAI V2</title>
+    <meta property="og:image" itemprop="image" content="https://www.GrowAI.com/img/GrowAI.png" />
+    <meta property="og:url" content="https://GrowAI.com" />
+    <link rel="shortcut icon" href="https://www.GrowAI.com/img/GrowAI.png">
+    <link rel="apple-touch-icon" href="https://www.GrowAI.com/img/GrowAI.png">
+    <link rel="canonical" href="https://www.GrowAI.com" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:domain" content="https://GrowAI.com" />
+    <meta name="twitter:title" content="Home - GrowAI V2" />
+    <meta name="twitter:description" content="#GrowAI #GrowAI provides a decentralized financial asset that rewards users through its auto-compounding and autostaking protocol." />
+    <meta name="twitter:image" content="https://www.GrowAI.com/img/GrowAI.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/util.css' rel='stylesheet'>
+    <link href='css/profile.css' rel='stylesheet'>
+    <link href='css/site.css' rel='stylesheet'>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <div class="nav-mob hidepc" style="display: none;">
+        <div class="container-fluid mb-5 pb-5 text-center">
+            <button class="btn" style="margin-left:1rem; margin-top:-2.5rem; position:absolute; top:3rem; left:0rem;" onclick="HideMenu();"><i class="bx bx-x" id="btn" style="color:white; font-size:2.1rem;"></i></button>
+            <img src="img/GrowAI.png" alt="GrowAI V2 logo" style="width:50%; height:50%; object-fit: contain; margin-top:2.5rem;">
+        </div>
+        <div class="container text-center" style="font-weight:800;">
+            <a style="text-decoration:none;" target="_blank" href="https://app.GrowAI.com">
+                <h2 class="text-gradient mb-4">Dashboard & Dapp</h2>
+            </a>
+            <a style="text-decoration:none;" href="https://www.GrowAI.com/blog">
+                <h2 class="text-white mb-4">Blog</h2>
+            </a>
+            <a style="text-decoration:none;" target="_blank" href="https://GrowAI.gitbook.io/eversafu--2-protocol/">
+                <h2 class="text-white mb-4">Whitepaper</h2>
+            </a>
+            <a target="_blank" href="https://twitter.com/GrowAI"><i class="bx bxl-twitter text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://t.me/GrowAI"><i class="bx bxl-telegram text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://discord.com/invite/GrowAI"><i class="bx bxl-discord text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://linktr.ee/GrowAI" style="margin-left:6px;">
+                <svg class="social-nav" style="height:100%;width: 33px;margin-top: -1.8rem;color: white;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Linktree</title><path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.528.897 1.052.89h1.294v4.776c0 .486-.404.89-.89.89H6.577a.898.898 0 0 1-.889-.891v-4.774H.992c-.728 0-1.214-.729-.89-1.377l6.96-12.627a1.065 1.065 0 0 1 1.863 0l2.913 5.585-3.885 7.042zm15.945 0l-6.96-12.627a1.065 1.065 0 0 0-1.862 0l-2.995 5.586 3.885 7.04c.081.164.081.326.081.487-.08.517-.529.897-1.052.89h-1.296v4.776c.005.49.4.887.89.89h2.914a.9.9 0 0 0 .892-.89v-4.775h4.612c.73 0 1.214-.729.89-1.377Z" fill="white"></path></svg>
+            </a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand text-gradient2" href="/"><img alt="GrowAI V2 Logo" class="header-logo" src="img/GrowAI.png" />GrowAI GrowAI</a>
+            <button class="navbar-toggler" type="button" onclick="ToggleMenu();">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="float:right;">
+                </ul>
+                <form class="d-flex">
+                    <div class="nav-end" style="margin-top:auto">
+                        <a target="_blank" style="text-decoration:none;" href="https://GrowAI.gitbook.io/eversafu--2-protocol/" class="btn btn-es-dark" type="submit">Whitepaper</a>
+                    </div>
+                    <div class="nav-end" style="margin-top:auto">
+                        <a style="text-decoration:none;" href="https://www.GrowAI.com/blog" class="btn btn-es-dark" type="submit">Blog</a>
+                    </div>
+                    <div class="nav-end">
+                        <a target="_blank" style="text-decoration:none;" href="https://app.GrowAI.com" class="btn btn-gradient" type="submit">Dapp</a>
+                    </div>
+                    <div class="nav-end">
+                        <a target="_blank" href="https://t.me/GrowAI"><i class="bx bxl-telegram social-nav"></i></a>
+                    </div>
+                    <div class="nav-end">
+                        <a target="_blank" href="https://twitter.com/GrowAI"><i class="bx bxl-twitter social-nav"></i></a>
+                    </div>
+                    <div class="nav-end">
+                        <a target="_blank" href="https://discord.com/invite/GrowAI"><i class="bx bxl-discord social-nav"></i></a>
+                    </div>
+                    <div class="nav-end">
+                        <a target="_blank" href="https://linktr.ee/GrowAI"><svg class="social-nav" style="height:100%; width:25px; margin-top:-0.15rem; color: white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="bx"><title>Linktree</title><path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.528.897 1.052.89h1.294v4.776c0 .486-.404.89-.89.89H6.577a.898.898 0 0 1-.889-.891v-4.774H.992c-.728 0-1.214-.729-.89-1.377l6.96-12.627a1.065 1.065 0 0 1 1.863 0l2.913 5.585-3.885 7.042zm15.945 0l-6.96-12.627a1.065 1.065 0 0 0-1.862 0l-2.995 5.586 3.885 7.04c.081.164.081.326.081.487-.08.517-.529.897-1.052.89h-1.296v4.776c.005.49.4.887.89.89h2.914a.9.9 0 0 0 .892-.89v-4.775h4.612c.73 0 1.214-.729.89-1.377Z" fill="white"></path></svg></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero pb-5">
+        <div class="container pt-5">
+            <div class="row text-center-mob">
+                <div class="col-12 col-lg-6 mt-5 justify-content-center align-items-center">
+                    <h2 class="text-white text-hero-lg atmospheric">Welcome to</h2>
+                    <h1 class="text-gradient mb-4 text-hero-lg atmospheric">#GrowAI </h1>
+                    <h4 style="color: #b1b1b1 !important">
+                        GrowAI  (GrowAI) provides a decentralized financial asset, that rewards users with a Safe Hold
+                    </h4>
+                    <a href="https://pancakeswap.finance/swap?outputCurrency=" class="mt-5 mr-1 btn btn-gradient-lg" style="">Buy</a>
+                    <a href="https://poocoin.app/tokens/" class="mt-5 ml-1 btn btn-gradient-lg" style="">Chart</a><br />
+                    <a href="/finance" class="mt-4 btn btn-gradient-lg" style="">Financial Overview</a>
+                </div>
+                <div class="col-12 col-lg-6 mt-5 text-center">
+                    <img src="img/GrowAI.gif" alt="GrowAI V2 Burning Logo" style="height: 80%; width:80%; object-fit: contain;" />
+                </div>
+            </div>
+            <div class="row pt-5 justify-content-center align-items-center text-center">
+                <div class="col-lg-1 col-md-2 col-3 text-center">
+                    <a href="https://coinmarketcap.com/currencies/GrowAI/" class=""><img src="img/cmc.png" alt="CMC GrowAI V2" style="height: 65%; width:65%;object-fit: contain;filter: brightness(1) invert(1);"></a>
+                </div>
+                <div class="col-lg-1 col-md-2 col-3 text-center">
+                    <a href="https://www.coingecko.com/en/coins/GrowAI" class=""><img src="img/cg.webp" alt="CG GrowAI V2" style="height: 65%; width:65%;object-fit: contain;"></a>
+                </div>
+                <div class="col-lg-1 col-md-2 col-3 text-center">
+                    <a href="https://bscscan.com/token/"><img src="img/bscscan.png" alt="BscScan GrowAI V2" style="height: 65%; width:65%;filter: brightness(0.1) invert(1);object-fit: contain;"></a>
+                </div>
+                <div class="col-lg-1 col-md-2 col-3 text-center">
+                    <a href="https://www.dextools.io/app/bnb/pair-explorer/"><img src="img/dextools_logo.png" alt="BscScan GrowAI V2" style="height: 65%; width:65%;object-fit: contain;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="statistics container mt-5">
+            <div class="row text-center" style="height:100% !important; ">
+                <div class="col-lg-3 col-6 stats-box">
+                    <h6 class=" atmospheric mt-3 f-shadow-w">Price:</h6>
+                    <h6 class=" atmospheric mt-3 f-shadow-w" id="price">$0</h6>
+                </div>
+                <div class="col-lg-3 col-6 stats-box">
+                    <h6 class=" atmospheric mt-3 f-shadow-w">Market Cap:</h6>
+                    <h6 class=" atmospheric mt-3 f-shadow-w" id="marketcap">$0</h6>
+                </div>
+                <div class="col-lg-3 col-6 stats-box">
+                    <h6 class=" atmospheric mt-3 f-shadow-w">Burned:</h6>
+                    <h6 class=" atmospheric mt-3 f-shadow-w" id="burned">0 GrowAI</h6>
+                </div>
+                <div class="col-lg-3 col-6 stats-box">
+                    <h6 class=" atmospheric mt-3 f-shadow-w">Supply:</h6>
+                    <h6 class=" atmospheric mt-3 f-shadow-w" id="holders">0</h6>
+                </div>
+            </div>
+        </div>
+        <div class="container justify-content-center align-items-center text-center mb-5 pb-5">
+            <div class="card mx-auto card-rebase mt-5 text-black" style="background:rgb(0,0,0,0.4) !important;">
+                <div class="card-body">
+                    <h4 class="atmospheric text-gradient mt-4" style="margin-bottom:0 !important;">Launch In:</h4>
+                    <h4 class="mt-3 atmospheric text-gradient" id="timer"></h4>
+
+                    <!--<h4 class="atmospheric text-gradient mt-5" style="margin-bottom:0 !important;">Pre-Sale:</h4>
+                    <a target="_blank" class="presalelink" style="text-decoration:none;" href="https://www.pinksale.finance/launchpad/0x791c84D75269fa6F89E1e5428f6c6FF9fc0AD890?chain=BSC"><h4 class="text-white" style="margin-bottom:0 !important;">&gt; Pre-Sale Link &lt;</h4></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="container pb-10">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-gradient2 atmospheric text-center-mob">About GrowAI</h1>
+                    <hr>
+                </div>
+                <div class="col-lg-12 col-12 mb-5">
+                    <h4 class="text-gradient2 text-center-mob">
+                        As a decentralized financial asset, GrowAI (GrowAI) rewards users with a SAFE Token and fixed Staking interest model using its unique protocol. Buy.<br><br>                        The GrowAI  team has created this token with these key concepts at its core. A community focused token ecosystem, open and honest communication between team and holders, and Transparency above all else.<br><br> We are
+                      the original GrowAI.
+                    </h4>
+                </div>
+                <div class="col-lg-6 col-12 mt-5" style="height:30vh;">
+                    <ul class="ml-5">
+                        <li class="text-gradient2">
+                            <h3>Easy and Safe Staking</h3>
+                        </li>
+                        <li class="text-gradient2">
+                            <h3>STAKING YEILDS</h3>
+                        </li>
+                        <li class="text-gradient2">
+                            <h3>SAFE Protocol</h3>
+                        </li>
+                        <li class="text-gradient2">
+                            <h3>Manual Token Burn</h3>
+                        </li>
+                        <li class="text-gradient2">
+                            <h3>Highest Sustainable APY</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-12 mt-5">
+                    <img class="text-white-75 text-center-mob img-stitched" alt="GrowAI Stitched Wallpaper" src="img/bg5.png">
+                    <!--<lottie-player src="lottie/staking_GrowAI.json" class="img-stitched" style="margin-left:2rem;" background="transparent" speed="0.75" loop autoplay></lottie-player>-->
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="col-12 pb-5">
+                    <div class="text-center">
+                        <h3 class="text-gradient2 atmospheric" style="font-weight:700;">Tokenomics</h3>
+                    </div>
+                </div>
+                <!--<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 pb-3 pt-5 ca-1">
+                    <div class="card atmospheric text-center" data-state="#about">
+                        <div class="card-header">
+                            <i class='bx bx-droplet fs-2 pt-3 text-primary'></i>
+                            <h5 class="pt-3 text-primary">Liquidity</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-section is-active text-center">
+                                <div class="card-content">
+                                    <p class="card-desc">
+                                        <div class="row text-gradient2 mac-white">
+                                            <div class="col-6">
+                                                Buy:<br /> 2.0%
+                                            </div>
+                                            <div class="col-6">
+                                                Sell:<br /> 2.0%
+                                            </div>
+                                        </div>
+                                        <h6 class="pt-5 text-gradient2">Ensures an ever-increasing collateral value of $GrowAI.</h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 pb-3 pt-5">
+                    <div class="card atmospheric text-center" data-state="#about">
+                        <div class="card-header">
+                            <i class='bx bx-dollar fs-2 pt-3 text-success'></i>
+                            <h5 class="pt-3 text-success">BUSD Rewards</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-section is-active text-center">
+                                <div class="card-content">
+                                    <p class="card-desc">
+                                        <div class="row text-gradient2 mac-white">
+                                            <div class="col-6">
+                                                Buy:<br /> 2.0%
+                                            </div>
+                                            <div class="col-6">
+                                                Sell:<br /> 4.0%
+                                            </div>
+                                        </div>
+                                        <h6 class="pt-5 text-gradient2">
+                                            Rewards are based on total volume in relation to the amount of $GrowAI tokens held.
+                                        </h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 pb-3 pt-5 ca-2">
+                    <div class="card atmospheric text-center" data-state="#about">
+                        <div class="card-header">
+                            <i class='bx bx-money-withdraw fs-2 pt-3 text-warning'></i>
+                            <h5 class="pt-3 text-warning">Treasury & Buyback</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-section is-active text-center">
+                                <div class="card-content">
+                                    <p class="card-desc">
+                                        <div class="row text-gradient2 mac-white">
+                                            <div class="col-6">
+                                                Buy:<br /> 3.5%
+                                            </div>
+                                            <div class="col-6">
+                                                Sell:<br /> 3.5%
+                                            </div>
+                                        </div>
+                                        <h6 class="pt-5 text-gradient2">
+                                            To provide GrowAI with a marketing and development budget.
+                                        </h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 pb-3 pt-5 ca-3">
+                    <div class="card atmospheric text-center" data-state="#about">
+                        <div class="card-header">
+                            <i class='bx bxs-hot fs-2 pt-3 text-danger'></i>
+                            <h5 class="pt-3  text-danger">Auto Fire Pit</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-section is-active text-center">
+                                <div class="card-content">
+                                    <p class="card-desc">
+                                        <div class="row text-gradient2 mac-white">
+                                            <div class="col-6">
+                                                Buy:<br /> 4.5%
+                                            </div>
+                                            <div class="col-6">
+                                                Sell:<br /> 4.5%
+                                            </div>
+                                        </div>
+                                        <h6 class="pt-5 text-gradient2">
+                                            Acts to reduce the circulating supply of $GrowAI which also assists in keeping the GrowAI protocol stable.
+                                        </h6>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section mt-10 pt-5">
+        <div class="row justify-content-center align-items-center atmospheric" style="margin-left:0; margin-right:0;">
+            <div class="col-12 pb-5">
+                <div class="text-center">
+                    <h3 class="text-gradient2" style="font-weight:700;">Featured On</h3>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6 pb-5 pl-2 pr-2">
+                <div class="text-center">
+                    <a href="https://www.bnbchain.org/en" target="_blank"><img class="brand-logo" src="img/bsc.webp" alt="Binance Smart Chain Logo" /></a>
+                    <h6 class="text-gradient2" style="font-weight:700;">Launch on BSC</h6>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6 pb-5 pl-2 pr-2">
+                <div class="text-center">
+                    <div class="text-center">
+                        <a href="https://www.pinksale.finance/launchpad/0x791c84D75269fa6F89E1e5428f6c6FF9fc0AD890?chain=BSC" target="_blank"><img class="brand-logo" src="img/pinksale.png" alt="Pinksale Logo" /></a>
+                        <h6 class="text-gradient2" style="font-weight:700;">Presale on Pinksale</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6 pb-5 pl-2 pr-2">
+                <div class="text-center">
+                    <a href="https://t.me/ninjalounge" target="_blank"><img class="brand-logo" src="img/ninjalounge.jpg" alt="Ninja Lounge Logo" /></a>
+                    <h6 class="text-gradient2" style="font-weight:700;">Ninja Lounge</h6>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6 pb-5 pl-2 pr-2">
+                <div class="text-center">
+                    <a href="https://pancakeswap.finance" target="_blank"><img class="brand-logo" src="img/pancake.png" alt="Pancakeswap Logo" /></a>
+                    <h6 class="text-gradient2" style="font-weight:700;">Trading on PCS</h6>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6 pb-5 pl-2 pr-2">
+                <div class="text-center">
+                    <a href="https://t.me/RudesCLounge" target="_blank">
+                        <img class="brand-logo" src="img/rudes.jpg" alt="Rudes Crypto Lounge Logo" />
+                    </a>
+                    <h6 class="text-gradient2" style="font-weight:700;">Rudes Crypto Lounge</h6>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6 pb-5 pl-2 pr-2">
+                <div class="text-center">
+                    <a href="https://t.me/coinlaunchcommunity" target="_blank">
+                        <img class="brand-logo" src="img/brian.jpg" alt="Brian's Coin Launch Lounge Logo" />
+                    </a>
+                    <h6 class="text-gradient2" style="font-weight:700;">Brian's Coin Launch Lounge</h6>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6 pb-5 pl-2 pr-2">
+                <div class="text-center">
+                    <a href="https://coinmarketcap.com/currencies/GrowAI/" target="_blank">
+                        <img class="brand-logo" src="img/cmc2.png" alt="Brian's Coin Launch Lounge Logo">
+                    </a>
+                    <h6 class="text-gradient2" style="font-weight:700;">CMC</h6>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-3 col-6 pb-5 pl-2 pr-2">
+                <div class="text-center">
+                    <a href="https://www.coingecko.com/en/coins/GrowAI" target="_blank">
+                        <img class="brand-logo" src="img/cg.webp" alt="Brian's Coin Launch Lounge Logo">
+                    </a>
+                    <h6 class="text-gradient2" style="font-weight:700;">CG</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center text-center" style="margin-left:0; margin-right:0;">
+            <div class="col-12 pb-5 mt-5 mb-4">
+                <div class="text-center">
+                    <h3 class="text-gradient2 atmospheric" style="font-weight:700;">Our AMAs</h3>
+                    <h5 class="text-white-50">Use the skip controls to browse through the AMAs</h5>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt-5 pt-5">
+                <!-- Tracks used in this music/audio player application are free to use. I downloaded them from Soundcloud and NCS websites. I am not the owner of these tracks. -->
+
+                <div id="app-cover">
+                    <div id="player">
+                        <div id="player-track">
+                            <div id="album-name"></div>
+                            <div id="track-name"></div>
+                            <div id="track-time">
+                                <div id="current-time"></div>
+                                <div id="track-length"></div>
+                            </div>
+                            <div id="s-area">
+                                <div id="ins-time"></div>
+                                <div id="s-hover"></div>
+                                <div id="seek-bar"></div>
+                            </div>
+                        </div>
+                        <div id="player-content">
+                            <div id="album-art">
+                                <img src="img/rudes.jpg" class="active" id="_1">
+                                <img src="img/caesar.jpg" id="_2">
+                                <img src="img/dreamcall.jpg" id="_3">
+                                <img src="img/cll.jpg" id="_4">
+                                <img src="img/chomys.jpg" id="_5">
+                                <img src="img/canes.jpg" id="_6">
+                                <img src="img/cryptoamalounge.jpg" id="_7">
+                                <img src="img/dexlounge.jpg" id="_8">
+                                <img src="img/forbez.jpg" id="_9">
+                                <img src="img/nw.jpg" id="_10">
+                                <img src="img/ultra.jpg" id="_11">
+                                <img src="img/discolounge.jpg" id="_12">
+                                <img src="img/discolounge.jpg" id="_13">
+                                <img src="img/cheesus.jpg" id="_14">
+                                <img src="img/ninjalounge.jpg" id="_15">
+                                <div id="buffer-box">Buffering ...</div>
+                            </div>
+                            <div id="player-controls">
+                                <div class="control first-control">
+                                    <div class="button" id="play-previous">
+                                        <i class="bx bx-skip-previous"></i>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <div class="button" id="play-pause-button">
+                                        <i class="bx bx-play"></i>
+                                    </div>
+                                </div>
+                                <div class="control">
+                                    <div class="button" id="play-next">
+                                        <i class="bx bx-skip-next"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-roadmap">
+            <div class="container">
+                <div class="row justify-content-center align-items-center pt-10">
+                    <div class="row mt-5 mb-5">
+                        <div class="col-12 mt-5">
+                            <h1 class="text-gradient2 atmospheric text-center-mob">Roadmap</h1>
+                            <hr />
+                        </div>
+                        <div class="col-12 mt-2 mb-3">
+                            <h4 class="text-gradient2 text-center-mob">The GrowAI V2 roadmap is comprised of our short- and longterm goals. This section will be updated as we achieve our current goals and gain new goals.</h4>
+                        </div>
+                    </div>
+                    <div class="container justify-content-center align-items-center">
+                        <div id="infographic" class="d-flex flex-column align-items-center py-5">
+                            <div class="step one text-success">
+                                <div class="circle">
+                                    <img class="img-roadmap" src="img/Logo_Old.png" />
+                                    <h4 class="hidemob"><br />Phase 1</h4>
+                                </div>
+                                <article data-step="1">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Private Sale</h6>
+                                    </header>
+                                </article>
+                                <article data-step="2">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>AMAs with Rudes, Brians and more.</h6>
+                                    </header>
+                                </article>
+                                <article data-step="3">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Website Launch</h6>
+                                    </header>
+                                </article>
+                                <article data-step="4">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Dapp Launch</h6>
+                                    </header>
+                                </article>
+                                <article data-step="5">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Presale & KYC on Pinksale</h6>
+                                    </header>
+                                </article>
+                            </div>
+                            <div class="step two text-success">
+                                <div class="circle">
+                                    <img class="img-roadmap" src="img/Logo_Old.png" />
+                                    <h4 class="hidemob"><br />Phase 2</h4>
+                                </div>
+                                <article data-step="6">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Launch and Liquidity Lock (Pinklock)</h6>
+                                    </header>
+                                </article>
+                                <article data-step="7">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Release OG NFT Set</h6>
+                                    </header>
+                                </article>
+                                <article data-step="8">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Release OG NFT Staking</h6>
+                                    </header>
+                                </article>
+                                <article data-step="9">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Release 10K Holders Club NFT</h6>
+                                    </header>
+                                </article>
+                                <article data-step="10">
+                                    <header class="d-flex align-items-center text-success">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Release 10K Holders Club Staking</h6>
+                                    </header>
+                                </article>
+                            </div>
+
+                            <div class="step three text-warning-2">
+                                <div class="circle">
+                                    <img class="img-roadmap" src="img/GrowAI.png" />
+                                    <h4 class="hidemob"><br />Phase 3</h4>
+                                </div>
+                                <article data-step="11">
+                                    <header class="d-flex align-items-center text-warning-2">
+                                        <i class="bx bx-check"></i>
+                                        <h6>Marketing Campaign</h6>
+                                    </header>
+                                </article>
+                                <article data-step="12">
+                                    <header class="d-flex align-items-center text-warning-2">
+                                        <i class="bx bx-check"></i>
+                                        <h6>CoinMarketCap Listing</h6>
+                                    </header>
+
+                                    <div class="body">
+                                        <small> Coming Soon!, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
+                                        <div class="d-flex justify-content-between mt-3 controls">
+                                        </div>
+                                    </div>
+                                </article>
+                                <article data-step="13">
+                                    <header class="d-flex align-items-center text-warning-2">
+                                        <i class="bx bx-check"></i>
+                                        <h6>CoinGecko Listing</h6>
+                                    </header>
+                                </article>
+                                <article data-step="14">
+                                    <header class="d-flex align-items-center text-warning-2">
+                                        <i class="bx bx-check"></i>
+                                        <h6>GrowAI Theme Song & Music Video</h6>
+                                    </header>
+                                </article>
+                                <article data-step="15">
+                                    <header class="d-flex align-items-center text-warning-2">
+                                        <i class="bx bx-hourglass"></i>
+                                        <h6>Listing NFTs on Marketplaces</h6>
+                                    </header>
+                                </article>
+                            </div>
+
+                            <div class="step four text-danger-2">
+                                <div class="circle">
+                                    <img class="img-roadmap" src="https://www.GrowAI.com/img/GrowAI.gif" />
+                                    <h4 class="hidemob"><br />Phase 4</h4>
+                                </div>
+                                <article data-step="16">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Merchandise</h6>
+                                    </header>
+                                </article>
+                                <article data-step="17">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Trading/Telegram Bots by GrowAI</h6>
+                                    </header>
+                                </article>
+                                <article data-step="18">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Crypto Accounting Dapp</h6>
+                                    </header>
+                                </article>
+                                <article data-step="19">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Coming Soon!</h6>
+                                    </header>
+                                </article>
+                                <article data-step="20">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Coming Soon!</h6>
+                                    </header>
+                                </article>
+                            </div>
+
+                            <div class="step five text-danger-2">
+                                <div class="circle">
+                                    <video class="img-roadmap" autoplay="" muted="" loop="" style="border-radius:30%;">
+                                        <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/2.mp4" type="video/mp4">
+                                    </video>
+
+                                    <h4 class="hidemob"><br />Phase 5</h4>
+                                </div>
+                                <article data-step="21">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Coming Soon!</h6>
+                                    </header>
+                                </article>
+                                <article data-step="22">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Coming Soon!</h6>
+                                    </header>
+                                </article>
+                                <article data-step="23">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Coming Soon!</h6>
+                                    </header>
+                                </article>
+                                <article data-step="24">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Coming Soon!</h6>
+                                    </header>
+                                </article>
+                                <article data-step="25">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-x"></i>
+                                        <h6>Coming Soon!</h6>
+                                    </header>
+
+                                </article>
+                                <article class="final-step" data-step="26">
+                                    <header class="d-flex align-items-center text-danger-2">
+                                        <i class="bx bx-rocket" style="font-size: 4em; padding: 20px"></i>
+                                        <h6>The Moon!</h6>
+                                    </header>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-advan">
+            <div class="container">
+                <div class="row pt-10 mt-5">
+                    <div class="col-12 mt-5">
+                        <h1 class="text-gradient2 atmospheric text-center-mob">Our Advantages</h1>
+                        <hr />
+                    </div>
+                    <div class="col-12 mt-2 mb-3">
+                        <h4 class="text-gradient2 text-center-mob">The advantages of GrowAI V2 as compared to our direct competition, and a short explanation as to how we will achieve these advantages.</h4>
+                    </div>
+                </div>
+                <div class="container mb-5 pb-2">
+                    <div class="table-responsive hidemob">
+                        <table class="table atmospheric text-white mt-3">
+                            <thead>
+                                <tr class="bg-gr mac-bg-purple text-black text-center f-shadow-w">
+                                    <th scope="col"></th>
+                                    <th scope="col" style="padding-left:0.5rem !important">GrowAI V2</th>
+                                    <th scope="col" style="padding-left:0.5rem !important">GrowAI</th>
+                                    <th scope="col" style="padding-left:0.5rem !important">SAFUU</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Reliable Team</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger">Rugged</td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Approachable Devs</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger">Rugged</td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Financial Transparency</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger">Rugged</td>
+                                    <td class="text-warning"><i class='bx bx-question-mark fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">APY</th>
+                                    <td class="text-success">383,125.80%</td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-danger">383,025.80%</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Fees</th>
+                                    <td class="text-success">10% / 12%</td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-danger">14% / 16%</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Auto-Burn</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Burn Rates</th>
+                                    <td class="text-success">4.5%</td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-danger">2.5%</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Dual Rewards</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                </tr>
+
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Sustainable Rebasing</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+                                <!--<tr>
+                                    <th class="text-gradient2" scope="row">Auto-Liquidity</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>-->
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Auto-Staking</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Auto-Staking Hard Coded</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Rug-Proof: No Minting Code</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Rug-Proof: No Manual Adjusting</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Rug-Proof: Fixed Rebase Time</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Rug-Proof: Liquidity Locked</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-gradient2" scope="row">Manual Token Buyback</th>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                    <td class="text-danger"><i class='bx bx-x fs-2'></i></td>
+                                    <td class="text-success"><i class='bx bx-check-shield fs-2'></i></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="hidepc">
+                        <div class="card mb-5 mt-3" style="border:solid 1px black;">
+                            <div class="card-header text-center atmospheric text-white bg-gr" style="margin-bottom:0;">
+                                <h6>Reliable Team</h6>
+                            </div>
+                            <div class="card-body atmospheric" style="background:rgb(0,0,0,.9)">
+                                <div class="container text-success" style="border-bottom: 1px solid black; padding-bottom: 0.8rem;">
+                                    <span class="text-gradient">GrowAI V2</span>
+                                    <i class='bx bx-check-shield fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="border-bottom: 1px solid black; padding-bottom: 0.8rem; padding-top: 0.8rem;">
+                                    <span class="text-gradient">GrowAI</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-success" style="padding-top: 0.8rem;">
+                                    <span class="text-gradient">Safuu</span>
+                                    <i class='bx bx-check-shield fs-2' style="float:right;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-5 mt-3" style="border:solid 1px black;">
+                            <div class="card-header text-center atmospheric text-white bg-gr" style="margin-bottom:0;">
+                                <h6>Approachable Devs</h6>
+                            </div>
+                            <div class="card-body atmospheric" style="background:rgb(0,0,0,.9)">
+                                <div class="container text-success" style="border-bottom: 1px solid black; padding-bottom: 0.8rem;">
+                                    <span class="text-gradient">GrowAI V2</span>
+                                    <i class='bx bx-check-shield fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="border-bottom: 1px solid black; padding-bottom: 0.8rem; padding-top: 0.8rem;">
+                                    <span class="text-gradient">GrowAI</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="padding-top: 0.8rem;">
+                                    <span class="text-gradient">Safuu</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-5 mt-3" style="border:solid 1px black;">
+                            <div class="card-header text-center atmospheric text-white bg-gr" style="margin-bottom:0;">
+                                <h6>Financial Transparency</h6>
+                            </div>
+                            <div class="card-body atmospheric" style="background:rgb(0,0,0,.9)">
+                                <div class="container text-success" style="border-bottom: 1px solid black; padding-bottom: 0.8rem;">
+                                    <span class="text-gradient">GrowAI V2</span>
+                                    <i class='bx bx-check-shield fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="border-bottom: 1px solid black; padding-bottom: 0.8rem; padding-top: 0.8rem;">
+                                    <span class="text-gradient">GrowAI</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-warning" style="padding-top: 0.8rem;">
+                                    <span class="text-gradient">Safuu</span>
+                                    <i class='bx bx-question-mark fs-2' style="float:right;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-5 mt-3" style="border:solid 1px black;">
+                            <div class="card-header text-center atmospheric text-white bg-gr" style="margin-bottom:0;">
+                                <h6>APY</h6>
+                            </div>
+                            <div class="card-body atmospheric" style="background:rgb(0,0,0,.9)">
+                                <div class="container text-success" style="border-bottom: 1px solid black; padding-bottom: 0.8rem;">
+                                    <span class="text-gradient">GrowAI V2</span>
+                                    <span style="float:right;">383.1K %</span>
+                                </div>
+                                <div class="container text-danger" style="border-bottom: 1px solid black; padding-bottom: 0.8rem; padding-top: 0.8rem;">
+                                    <span class="text-gradient">GrowAI</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="padding-top: 0.8rem;">
+                                    <span class="text-gradient">Safuu</span>
+                                    <span style="float:right;">383.0K %</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-5 mt-3" style="border:solid 1px black;">
+                            <div class="card-header text-center atmospheric text-white bg-gr" style="margin-bottom:0;">
+                                <h6>Auto-Burn</h6>
+                            </div>
+                            <div class="card-body atmospheric" style="background:rgb(0,0,0,.9)">
+                                <div class="container text-success" style="border-bottom: 1px solid black; padding-bottom: 0.8rem;">
+                                    <span class="text-gradient">GrowAI V2</span>
+                                    <i class='bx bx-check-shield fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="border-bottom: 1px solid black; padding-bottom: 0.8rem; padding-top: 0.8rem;">
+                                    <span class="text-gradient">GrowAI</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="padding-top: 0.8rem;">
+                                    <span class="text-gradient">Safuu</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-5 mt-3" style="border:solid 1px black;">
+                            <div class="card-header text-center atmospheric text-white bg-gr" style="margin-bottom:0;">
+                                <h6>Dual Rewards</h6>
+                            </div>
+                            <div class="card-body atmospheric" style="background:rgb(0,0,0,.9)">
+                                <div class="container text-success" style="border-bottom: 1px solid black; padding-bottom: 0.8rem;">
+                                    <span class="text-gradient">GrowAI V2</span>
+                                    <i class='bx bx-check-shield fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="border-bottom: 1px solid black; padding-bottom: 0.8rem; padding-top: 0.8rem;">
+                                    <span class="text-gradient">GrowAI</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="padding-top: 0.8rem;">
+                                    <span class="text-gradient">Safuu</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-5 mt-3" style="border:solid 1px black;">
+                            <div class="card-header text-center atmospheric text-white bg-gr" style="margin-bottom:0;">
+                                <h6>Burn Rates</h6>
+                            </div>
+                            <div class="card-body atmospheric" style="background:rgb(0,0,0,.9)">
+                                <div class="container text-success" style="border-bottom: 1px solid black; padding-bottom: 0.8rem;">
+                                    <span class="text-gradient">GrowAI V2</span>
+                                    <span style="float:right;">6.5%</span>
+                                </div>
+                                <div class="container text-danger" style="border-bottom: 1px solid black; padding-bottom: 0.8rem; padding-top: 0.8rem;">
+                                    <span class="text-gradient">GrowAI</span>
+                                    <i class='bx bx-x fs-2' style="float:right;"></i>
+                                </div>
+                                <div class="container text-danger" style="padding-top: 0.8rem;">
+                                    <span class="text-gradient">Safuu</span>
+                                    <span style="float:right;">2.5%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mb-10" style="background: #191919; border-radius: 25px; padding: 1rem;">
+                    <div class="col-12 text-center-mob">
+                        <h2 class="text-gradient mb-5">Advantages Explained</h2>
+                        <h4 class="text-gradient2 mb-4 text-center-mob"><span>Reliable Team:<br /></span> By having a number of people experienced in the crypto-world and based devs that have experience with crypto projects.</h4>
+                        <h4 class="text-gradient2 mb-5 text-center-mob"><span>Approachable Devs:<br /></span> Our lead developer Adam is always approachable, willing to help and has numerously shown himself on videochat at his former projects. And our web/dapp developer Alex operates from an officially
+                            registered Dutch company.</h4>
+                        <h4 class="text-gradient2 mb-3 text-center-mob"><span>Financial Transparency:<br /></span> Because of a major lack in this area within the V1 project, we have decided to do things very differently! We have therefore opted to setup a public document. There, you will find all
+                            the project payments noted down, their purpose clarified and all transaction details included.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5 pb-5">
+            <div class="container">
+                <h1 class="text-gradient2 atmospheric text-center-mob">Our NFTs</h1>
+                <hr />
+                <h4 class="text-gradient2 text-center-mob">Here we will showcase all released GrowAI V2 NFTs and a description as to their utility.</h4>
+
+                <div class="row mt-5 p2pc pb-5" style="background: #191919; border-radius: 25px; box-shadow: 0 0 0 5px #4a428c; margin-left:0.5rem; margin-right:0.5rem;">
+                    <h4 class="text-gradient2 text-center atmospheric text-center-mob mt-3">GrowAI OG Set</h4>
+                    <hr />
+                    <h4 class="text-gradient2 text-center-mob mb-5">As promised we delivered our first NFT set under the name 'GrowAI OG'. This first set is comprised of 300 NFTs which are stakeable to earn more GrowAI, this set has an APY of 3 tokens per day. The set was minted in less than 3 days
+                        and is stakeable on the <a href="https://app.flokipulse.com">FlokiPulse Platform</a></h4>
+                    <div id="gallery-html" class="col-md-4 col-3" style=" text-align: end;">
+                        <!--<img id="og-2" onclick="SwapImage('og-2')" class="nft-img" src="img/GrowAI0g-2.gif" />
+                        <img id="og-3" onclick="SwapImage('og-3')" class="nft-img" src="img/GrowAI0g-3.gif" />
+                        <img id="og-4" onclick="SwapImage('og-4')" class="nft-img" src="img/GrowAI0g-4.gif" />
+                        <img id="og-5" onclick="SwapImage('og-5')" class="nft-img" src="img/GrowAI0g-5.gif" />-->
+
+
+
+                        <video id="og-2" onclick="SwapImage('og-2')" class="nft-img" autoplay muted loop>
+                            <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/2.mp4" type="video/mp4">
+                        </video>
+                        <video id="og-3" onclick="SwapImage('og-3')" class="nft-img" autoplay muted loop>
+                            <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/3.mp4" type="video/mp4">
+                        </video>
+                        <video id="og-4" onclick="SwapImage('og-4')" class="nft-img" autoplay muted loop>
+                            <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/4.mp4" type="video/mp4">
+                        </video>
+                        <video id="og-5" onclick="SwapImage('og-5')" class="nft-img" autoplay muted loop>
+                            <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div id="display-html" class="col-md-5 col-6" style="float:left;">
+                        <video id="og-1" class="nft-img-displayed" autoplay muted loop>
+                            <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <h4 class="text-gradient2 text-center atmospheric text-center-mob mt-5 pt-5">GrowAI 10K Holder Set</h4>
+                    <hr>
+                    <h4 class="text-gradient2 text-center-mob mb-5">
+                        For our most loyal of holders we present the GrowAI 10K Token Club NFT. This NFT is awarded to the first 300 holders that reach 10K tokens or more, and is stakeable on the <a href="https://app.flokipulse.com">FlokiPulse Platform</a>                        to earn even more BUSD!
+                    </h4>
+                    <div class="text-center">
+                        <video id="og-1" class="nft-img-displayed" autoplay muted loop style="border-radius:15px; max-height:350px; max-width:75vw;">
+                            <source src="https://adaboy.mypinata.cloud/ipfs/QmdNzbxE6J7pCMVmAJyyXsxb8tCByCUdEWsh5U2DJHXqMc/1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="team-section mb-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center-mob">
+                <div class="row">
+                    <div class="col-12 mt-5">
+                        <h1 class="text-gradient2 atmospheric text-center-mob">The GrowAI V2 Team</h1>
+                        <hr />
+                    </div>
+                    <div class="col-12 mt-2 mb-3">
+                        <h4 class="text-gradient2 text-center-mob">The GrowAI V2 Team is comprised of a number of professional and knowledgable members. The team has been formed from ex-V1 holders who wanted to create a more safe and transparent environment while staying true to the beloved
+                            ES concept.</h4>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-10 pb-5 pt-5">
+                        <div class="card atmospheric" data-state="#about">
+                            <div class="card-head card-header">
+                                <div class="card-cover" style="background-image: url('img/adam.jpg')"></div>
+                                <img class="card-avatar" src="img/adam.jpg" alt="avatar adam" />
+                                <h1 class="card-fullname">Ape</h1>
+                                <h2 class="card-jobtitle">Lead Developer</h2>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-section is-active text-gradient mac-white" id="about">
+                                    <div class="card-content">
+                                        <p class="card-desc">
+                                            The owner and lead developer of GrowAI
+                                        </p>
+                                    </div>
+                                    <div class="card-social">
+                                        <a href="https://t.me/apethdev">
+                                            <i class="bx bxl-telegram fs-4" style="border:none;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-10 pb-5 pt-5">
+                        <div class="card atmospheric" data-state="#about">
+                            <div class="card-head card-header">
+                                <div class="card-cover" style="background-image: url('img/alex.jpeg')"></div>
+                                <img class="card-avatar" src="img/alex.jpeg" alt="avatar alex" />
+                                <h1 class="card-fullname">Bern</h1>
+                                <h2 class="card-jobtitle">Web Developer</h2>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-section is-active  text-gradient mac-white" id="about">
+                                    <div class="card-content">
+                                        <p class="card-desc">
+                                            The Main developer for GrowAI
+                                        </p>
+                                    </div>
+                                    <div class="card-social text-center">
+                                        <a href="https://t.me/apethdev">
+                                            <i class="bx bxl-telegram fs-4" style="border:none;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-10 pb-5 pt-5">
+                        <div class="card atmospheric" data-state="#about">
+                            <div class="card-head card-header">
+                                <div class="card-cover" style="background-image: url('img/GrowAI.png')"></div>
+                                <img class="card-avatar" src="img/GrowAI.png" alt="avatar oleman" />
+                                <h1 class="card-fullname">Oleman</h1>
+                                <h2 class="card-jobtitle">Community Manager</h2>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-section is-active  text-gradient mac-white" id="about">
+                                    <div class="card-content">
+                                        <p class="card-desc">
+                                            Moderates and manages the GrowAI community.
+                                        </p>
+                                    </div>
+                                    <div class="card-social text-center">
+                                        <a href="https://t.me/WhatchaWant2Know">
+                                            <i class="bx bxl-telegram fs-4" style="border:none;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-10 pb-5 pt-5">
+                        <div class="card atmospheric" data-state="#about">
+                            <div class="card-head card-header">
+                                <div class="card-cover" style="background-image: url('img/deptsize.jpg')"></div>
+                                <img class="card-avatar" src="img/deptsize.jpg" alt="avatar deptsize" />
+                                <h1 class="card-fullname">Deptsize</h1>
+                                <h2 class="card-jobtitle">Artist & Graphics</h2>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-section is-active  text-gradient mac-white" id="about">
+                                    <div class="card-content">
+                                        <p class="card-desc">
+                                            Our artist and graphics designer.
+                                        </p>
+                                    </div>
+                                    <div class="card-social text-center">
+                                        <a href="https://t.me/Vegavon">
+                                            <i class="bx bxl-telegram fs-4" style="border:none;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-10 pb-5 pt-5">
+                        <div class="card atmospheric" data-state="#about">
+                            <div class="card-head card-header">
+                                <div class="card-cover" style="background-image: url('img/justin.jpg')"></div>
+                                <img class="card-avatar" src="img/justin.jpg" alt="avatar deptsize" />
+                                <h1 class="card-fullname">Justin T</h1>
+                                <h2 class="card-jobtitle">Community/Marketing</h2>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-section is-active  text-gradient mac-white" id="about">
+                                    <div class="card-content">
+                                        <p class="card-desc">
+                                            Part of the community management and marketing.
+                                        </p>
+                                    </div>
+                                    <div class="card-social text-center">
+                                        <a href="https://t.me/Justin_Tdot">
+                                            <i class="bx bxl-telegram fs-4" style="border:none;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" mb-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center-mob">
+                <div class="row">
+                    <div class="col-12 mt-5">
+                        <h1 class="text-gradient2 atmospheric text-center-mob">Contact</h1>
+                        <hr>
+                    </div>
+                    <div class="col-lg-5 mt-5 mb-3">
+                        <h4 class="text-gradient2 text-center-mob">Use this form to send any forms of proposals, marketing requests or other generic questions.</h4><br />
+                        <h4 class="text-gradient2 text-center-mob">The GrowAI V2 team gets alot of proposals and cannot 100% guarantee you will get an answer. Please try to state all the details of your proposal and the reason why we should pick you.</h4>
+                    </div>
+                    <div class="col-lg-7 mt-5 mb-3">
+                        <div class="card">
+                            <p class="atmospheric" style="margin: 0.5rem;margin-bottom: 0;">Your Name</p>
+                            <input id="select-name" style="background: black;border: solid 1px white;color: white;margin: 0.5rem;border-radius: 5px;">
+                            <p class="atmospheric" style="margin: 0.5rem;margin-bottom: 0;">Your TG Handle</p>
+                            <input id="select-handle" style="background: black;border: solid 1px white;color: white;margin: 0.5rem;border-radius: 5px;">
+                            <p class="atmospheric" style="margin: 0.5rem;margin-bottom: 0;">Subject</p>
+                            <select id="select-subject" class="form-select" aria-label="Default select example" style="margin: 0.5rem;width: 95%;background: black;color: white;">
+                                <option selected="">Select a Subject</option>
+                                <option value="1">Marketing Offer / Proposal</option>
+                                <option value="2">Support</option>
+                                <option value="3">Other</option>
+                            </select>
+                            <p class="atmospheric" style="margin: 0.5rem;margin-bottom: 0;">Message</p>
+                            <textarea id="select-message" style="background: black; border: 1px solid white; color: white; margin: 0.5rem; border-radius: 5px; height: 97px;"></textarea>
+                            <p id="select-info" class="text-white text-center mt-2"></p>
+                            <p id="select-error" class="text-danger text-center mt-2"></p>
+                            <button class="btn btn-gradient" style="margin: 1rem;" onclick="SendEmail();">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-10 small text-center text-white-50 pb-3 pt-3" style="position:relative;">
+        <div class="container pb-2">
+            <a target="_blank" href="https://twitter.com/GrowAI/" class="social"><i class="bx bxl-twitter"></i></a>
+            <a target="_blank" href="https://t.me/GrowAI" class="social"><i class="bx bxl-telegram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/EverSafuv2/" class="social"><i class="bx bxl-facebook"></i></a>
+            <a target="_blank" href="https://discord.com/invite/GrowAI" class="social"><i class="bx bxl-discord"></i></a>
+            <a target="_blank" href="https://linktr.ee/GrowAI" class="social" style="text-decoration:none;">
+                <svg style="height:100%; width:29px; margin-top:-0.65rem;color: white" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Linktree</title>
+                    <path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.528.897 1.052.89h1.294v4.776c0 .486-.404.89-.89.89H6.577a.898.898 0 0 1-.889-.891v-4.774H.992c-.728 0-1.214-.729-.89-1.377l6.96-12.627a1.065 1.065 0 0 1 1.863 0l2.913 5.585-3.885 7.042zm15.945 0l-6.96-12.627a1.065 1.065 0 0 0-1.862 0l-2.995 5.586 3.885 7.04c.081.164.081.326.081.487-.08.517-.529.897-1.052.89h-1.296v4.776c.005.49.4.887.89.89h2.914a.9.9 0 0 0 .892-.89v-4.775h4.612c.73 0 1.214-.729.89-1.377Z" fill="white"></path>
+                </svg>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/eversafu_v2/" class="social"><i class="bx bxl-instagram"></i></a>
+        </div>
+        <div class="container px-4 px-lg-5">2022 © EVERSAFU V2 / <a href="https://www.dutchdapps.com/" style="text-decoration:none; color:inherit;">DUTCH DAPPS</a> - ALL RIGHTS RESERVED</div>
+        <div class="footer-shadow"></div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/abi.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        $(document).ready(function() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const product = urlParams.get('form')
+
+            if (product == "contact") {
+                window.scrollTo(0, document.body.scrollHeight);
+            }
+        });
+
+
+        function SwapImage(id) {
+            var options = [
+                `<video id="og-1" onclick="SwapImage('og-1')" class="nft-img" autoplay muted loop>
+                    <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/1.mp4" type="video/mp4">
+                 </video>`,
+
+                `<video id="og-2" onclick="SwapImage('og-2')" class="nft-img" autoplay muted loop>
+                    <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/2.mp4" type="video/mp4">
+                 </video>`,
+
+                `<video id="og-3" onclick="SwapImage('og-3')" class="nft-img" autoplay muted loop>
+                    <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/3.mp4" type="video/mp4">
+                 </video>`,
+
+                `<video id="og-4" onclick="SwapImage('og-4')" class="nft-img" autoplay muted loop>
+                    <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/4.mp4" type="video/mp4">
+                 </video>`,
+
+                `<video id="og-5" onclick="SwapImage('og-5')" class="nft-img" autoplay muted loop>
+                    <source src="https://adaboy.mypinata.cloud/ipfs/QmdKuAyvdQzqN5A1x4CdU1R5GCCFfxyKMLng2SuHJETWaU/5.mp4" type="video/mp4">
+                 </video>`
+            ];
+
+            var htmlDisplay = "";
+            var html = "";
+
+            for (let opt in options) {
+                var _opt = options[opt];
+
+                if (_opt.includes(id)) {
+                    var dp = _opt.replace("nft-img", "nft-img-displayed");
+                    dp = dp.replace(`onclick="SwapImage('${id}')"`, "");
+                    htmlDisplay += dp;
+                } else {
+                    html += _opt;
+                }
+            }
+
+            $("#display-html").html(htmlDisplay);
+            $("#gallery-html").html(html);
+        }
+    </script>
+</body>
+
+</html>
